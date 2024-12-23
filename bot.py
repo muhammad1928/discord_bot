@@ -7,6 +7,7 @@ with open("../api_token_discord.txt", "r") as f:
     TOKEN = f.read().strip()
 
 # Bot setup
+
 intents = discord.Intents.default()
 intents.members = True  # For accessing member info (Server Members Intent)
 intents.presences = True  # For tracking presence (Presence Intent)
