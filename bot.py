@@ -39,6 +39,8 @@ async def on_message(message):
         await message.channel.send("I'm just a bot, but I'm doing great! Thanks for asking.")
     elif "help" in message.content.lower():
         await message.channel.send("Here are some commands you can use: !play, !pause, !resume, !next, !stop, !playlist, !join, !leave")
+    elif "bye" in message.content.lower():
+        await message.channel.send("Goodbye! Have a great day!")
 
     # Process commands
     await bot.process_commands(message)
